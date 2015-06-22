@@ -2,19 +2,18 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Rails Mailinglist Activejob" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Mailinglist Activejob" %>">
+    <title><%= content_for?(:title) ? yield(:title) : "The Armchair" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "The Armchair" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
-    </main>
+    <div class="background">
+      <div class="overlay">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

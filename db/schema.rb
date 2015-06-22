@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150101155005) do
+ActiveRecord::Schema.define(version: 20141028001605) do
 
   create_table "visitors", force: :cascade do |t|
     t.string   "email"
