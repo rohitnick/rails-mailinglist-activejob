@@ -17,7 +17,7 @@ Screenshots:
 h2. Credits
 
 Daniel Kehoe ("http://danielkehoe.com/":http://danielkehoe.com/) implemented the application and wrote the tutorial.
-Rohit Agarwal ("http://www.github.com/rohitnick":rohitnick) added more functionalities
+Rohit Agarwal ("rohitnick":http://www.github.com/rohitnick) added more functionalities
 
 h2. MIT License
 
