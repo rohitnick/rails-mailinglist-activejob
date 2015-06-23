@@ -1,4 +1,4 @@
-h1. This is a fork of the excellent "Rails Mailinglist Activejob":http://railsapps.github.com/rails-mailinglist-activejob project
+h1. This is a fork of the excellent "Rails Mailinglist Activejob":http://github.com/RailsApps/rails-mailinglist-activejob project
 
 by "DanielKehoe":https://github.com/DanielKehoe
 
