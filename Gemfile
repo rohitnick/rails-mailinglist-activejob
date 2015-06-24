@@ -15,11 +15,13 @@ end
 gem 'bootstrap-sass'
 gem 'gibbon'
 gem 'sucker_punch'
+gem "has_secure_token", :git => "git://github.com/rohitnick/has_secure_token.git"
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
+  gem 'pry'
 end
 group :development, :test do
   gem 'factory_girl_rails'

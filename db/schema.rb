@@ -15,8 +15,13 @@ ActiveRecord::Schema.define(version: 20141028001605) do
 
   create_table "visitors", force: :cascade do |t|
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "refer_token"
+    t.integer  "refer_visit_count"
+    t.string   "ip_address"
+    t.string   "city"
+    t.integer  "referer_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
 end

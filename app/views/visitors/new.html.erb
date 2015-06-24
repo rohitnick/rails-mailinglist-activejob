@@ -8,6 +8,7 @@
     <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
     <div class="form-group">
       <input type="text" class="form-control width-400 input-lg" placeholder="Enter your Email." name="visitor[email]">
+      <input type="hidden" name="visitor[referer_token]" value="<%= params[:referer_token] %>"
     </div>
     <button type="submit" class="btn btn-lg btn-success">Add me to the list.</button>
   </div>
