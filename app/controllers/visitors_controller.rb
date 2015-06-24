@@ -10,6 +10,8 @@ class VisitorsController < ApplicationController
 
   def create
     @visitor = Visitor.new(visitor_params)
+    @visitor.ip_address = request.remote_ip
+    binding.pry
     if @visitor.save
       redirect_to root_path, notice: "Signed up #{@visitor.email}."
     else
