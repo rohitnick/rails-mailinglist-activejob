@@ -1,15 +1,27 @@
 <div class="inner text-center">
   <h1> The Armchair</h1>
 </div>
-<div class="text-center middle-section">
+<div class="text-center middle-section js-form-container">
   <h1>Providing design centric furniture directly from the makers.</h1><br/>
   <p>Join our mailing list for updates on our launch.</p>
-  <form class="form-inline" action="<%= visitors_path %>" method="post">
+  <form id="js-form" class="form-inline" action="<%= visitors_path %>" method="post">
     <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
     <div class="form-group">
       <input type="text" class="form-control width-400 input-lg" placeholder="Enter your Email." name="visitor[email]">
       <input type="hidden" name="visitor[referer_token]" value="<%= params[:referer_token] %>"
     </div>
-    <button type="submit" class="btn btn-lg btn-success">Add me to the list.</button>
+    <button type="submit" class="btn btn-lg btn-success js-submit" data-toggle="modal" data-target="#confirmModal">Add me to the list.</button>
+  </form>
+</div>
+</div>
+
+<div class="text-center middle-section js-confirm-container hide">
+  <h1>Thanks for signing up, welcome to our prelaunch family. </h1><br/>
+  <p> Bring in more members to our Home. Share this link with your friends and family. <p>
+  <div class="form-inline">
+    <div class="form-group">
+      <input type="text" readonly="readonly" class="form-control width-400 js-refer-token text-center input-lg">
+    </div>
+    <p class='js-help-text'> Press Command+C to copy<p>
   </div>
 </div>
